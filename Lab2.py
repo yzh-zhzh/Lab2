@@ -1,11 +1,11 @@
 def display_main_menu():
     print("display_main_menu")
 
-def get_user_input():
-    temp = input("Enter some temperature values, separated by spaces: ")
-    temp = temp.split()
-    temp = [float(i) for i in temp]
-    return temp
+# def get_user_input():
+    #temp = input("Enter some temperature values, separated by spaces: ")
+    #temp = temp.split()
+    #temp = [float(i) for i in temp]
+    #return temp
 
 def calc_average(temp_list):
     if len(temp_list) == 0:
@@ -28,7 +28,7 @@ def calc_median_temperature(temp_list):
     else:
         return temp_list[len(temp_list)//2]
 
-temp_list = get_user_input()
+temp_list = [23.5, 25.0, 21.8, 22.5, 24.2, 23.7, 22.9, 23.3, 24.5, 25.2]
 average = calc_average(temp_list)
 min_temp, max_temp = find_min_max(temp_list)
 sorted_list = sort_temperature(temp_list)
